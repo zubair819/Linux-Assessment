@@ -1,0 +1,10 @@
+[Unit]
+DESCRIPTION=Show current time every minute
+
+[Service]
+ExecStart=/usr/local/bin/showtime.sh
+Restart=always
+User=sigmoid
+
+[Install]
+WantedBy=multi-user.target
